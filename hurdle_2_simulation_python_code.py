@@ -182,11 +182,11 @@ for p in range(0,o):
     print("so there are a total of",((lithium_elec_1*photons_per_peak +lithium_elec_2*photons_per_peak-nb_electron_lithium_quantum_tunnel)), "electrons coming from lithium atoms in the box at t=", d, "ns" )
     print("and there are a total of ", (beryllium_elec_1*photons_per_peak + beryllium_elec_2*photons_per_peak- nb_electron_beryllium_quantum_tunnel), "electrons from beryllium atoms in the box at t=",d,"ns")
 
-    nb_species_A_not_rounded_list.append((lithium_elec_1*photons_per_peak +lithium_elec_2*photons_per_peak-nb_electron_lithium_quantum_tunnel)/(10**(16)))
-    nb_species_B_not_rounded_list.append((beryllium_elec_1*photons_per_peak + beryllium_elec_2*photons_per_peak- nb_electron_beryllium_quantum_tunnel)/(10**(16)))
+    nb_species_A_not_rounded_list.append((lithium_elec_1*photons_per_peak +lithium_elec_2*photons_per_peak-nb_electron_lithium_quantum_tunnel)/(10**(15)))
+    nb_species_B_not_rounded_list.append((beryllium_elec_1*photons_per_peak + beryllium_elec_2*photons_per_peak- nb_electron_beryllium_quantum_tunnel)/(10**(15)))
 
-    nb_species_A=round((lithium_elec_1*photons_per_peak +lithium_elec_2*photons_per_peak-nb_electron_lithium_quantum_tunnel)/(10**(16)))
-    nb_species_B=round((beryllium_elec_1*photons_per_peak + beryllium_elec_2*photons_per_peak- nb_electron_beryllium_quantum_tunnel)/(10**(16)))
+    nb_species_A=round((lithium_elec_1*photons_per_peak +lithium_elec_2*photons_per_peak-nb_electron_lithium_quantum_tunnel)/(10**(15)))
+    nb_species_B=round((beryllium_elec_1*photons_per_peak + beryllium_elec_2*photons_per_peak- nb_electron_beryllium_quantum_tunnel)/(10**(15)))
     #since we are doing by second, every iteration say 4 ns , we divide by 4 so that average for 1 ns and add it to the previous one.
     #if there are less than 2 animals of a certain species, then that species cannot mate and thus we say that that species went extinct
     nb_species_A_list_time_dep.append(nb_species_A)
